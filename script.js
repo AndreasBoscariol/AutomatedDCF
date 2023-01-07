@@ -1,4 +1,3 @@
-
 const tickerInput = document.getElementById('ticker-input');
 const tickerList = document.getElementById('ticker-list');
 
@@ -54,7 +53,6 @@ tickerList.addEventListener('click', function(event) {
 });
 
 // Read the Excel file
-const Xlsx = require('xlsx');
 const submitButton = document.getElementById('submit-button');
 const currentYear = (new Date()).getFullYear();
 
