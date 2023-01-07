@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #28362c;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ticker-input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  position: relative;
+}
+
+#ticker-list {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-72%, +20%);
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+  width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#ticker-list li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#ticker-list li:hover {
+  background-color: #eee;
+}
+
+#submit-button {
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+  background-color: #33a351;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#submit-button:hover {
+  background-color: #48c268;
+}
+
+#submit-button:active {
+  background-color: #225931;
+}
